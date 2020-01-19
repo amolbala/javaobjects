@@ -1,0 +1,35 @@
+// Human class. Contains some basic functions.
+// ABSTRACTION - A human class has all these functions and variables.
+// The programmer can use this class / object and make many 'humans'.
+// All of them have the same functions and variables.
+public class human
+{
+    // ENCAPSULATION - The variables in the class are private and can not be accessed directly.
+    private String name = "Amol Venkataraman";
+    private int age = 15;
+
+    // ENCAPSULATION - This is the only way the class allows you to access the variables.
+    public void whoami ()
+    {
+	System.out.println ("I am " + name + ". I am " + age + " years old.");
+    }
+
+
+    // Some basic functions: eat, sleep and walk.
+    public void eat ()
+    {
+	System.out.println ("Eating...");
+    }
+
+
+    public void sleep ()
+    {
+	System.out.println ("Sleeping...");
+    }
+
+
+    public void walk ()
+    {
+	System.out.println ("Walking...");
+    }
+}
