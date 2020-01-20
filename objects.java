@@ -10,6 +10,7 @@ public class objects
 	human person1 = new human ();
 
 	// ENCAPSULATION - This is the only way you can access the variables defined in the class.
+	person1.getinfo ("John", 20);
 	person1.whoami ();
 	
 	// Human can do all of the basic functions that are defined in the human class.
@@ -21,8 +22,28 @@ public class objects
 	System.out.println ("\n");
 	
 
-	// Programmer.
+	// Runner
+	System.out.println ("=== RUNNER ===");
 	
+	// ABSTRACTION - Creating a runner
+	// INHERITANCE - runner inherits all functions and variables from human.
+	human usainbolt = new runner ();
+
+	// ENCAPSULATION - This is the only way you can access the variables defined in the class.
+	usainbolt.getinfo ("Usain Bolt", 50);
+	usainbolt.whoami ();
+	
+	// Runner can access all of the human's functions.
+	usainbolt.eat ();
+	usainbolt.sleep ();
+	// DYNAMIC / RUNTIME POLYMORPHISM - The walk function is overwrited by the runner class.
+	usainbolt.walk ();
+
+	// Print out a blank line.
+	System.out.println ("\n");
+	
+	
+	// Programmer.
 	System.out.println ("=== PROGRAMMER ===");
 	
 	// ABSTRACTION - Creating a programmer
@@ -30,6 +51,7 @@ public class objects
 	programmer person2 = new programmer ();
 
 	// ENCAPSULATION - This is the only way you can access the variables defined in the class.
+	person2.getinfo ("Amol", 15);
 	person2.whoami ();
 	
 	// INHERITANCE - Programmer can do all the functions that are defined in the human class.
@@ -52,7 +74,8 @@ public class objects
 	mathematician person3 = new mathematician ();
 
 	// ENCAPSULATION - This is the only way you can access the variables defined in the class.
-	person3.whoami ();
+	person1.getinfo ("Pascal", 100);
+	person1.whoami ();
 	
 	// INHERITANCE - Mathematician can do all the functions that are defined in the human class.
 	// Programmer can also do the functions that are defined in the mathematician class.

@@ -5,9 +5,17 @@
 public class human
 {
     // ENCAPSULATION - The variables in the class are private and can not be accessed directly.
-    private String name = "Amol Venkataraman";
-    private int age = 15;
+    private String name;
+    private int age;
 
+    // ENCAPSULATION - The variables can only be written to using this function.
+    // Get input and store it as a variable.
+    public void getinfo (String name, int age)
+    {
+	this.name = name;
+	this.age = age;
+    }
+    
     // ENCAPSULATION - This is the only way the class allows you to access the variables.
     public void whoami ()
     {
@@ -31,5 +39,15 @@ public class human
     public void walk ()
     {
 	System.out.println ("Walking...");
+    }
+}
+
+// Runner class
+// DYNAMIC / RUNTIME POLYMORPHISM - The runner class overwrites the walk class of the human.
+class runner extends human
+{
+    public void walk ()
+    {
+	System.out.println("Running fast...");
     }
 }
