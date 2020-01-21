@@ -6,7 +6,7 @@ The example uses three different objects / classes. They are `human`, `programme
 
 ## What to do
 - Make sure you have all the files in the same folder.
-- Open all four `.java` files. They should work in any IDE and any version of Java.
+- Open all five `.java` files. They should work in any IDE and any version of Java.
 - All files have documentation to explain the principles.
 - Run the `objects.java` file to see the output.
 
