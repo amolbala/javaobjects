@@ -6,14 +6,14 @@ public class vault
 
     // Setter - to set the value.
     // ENCAPSULATION - This is the only way the class allows you to set the value of the variable.
-    public void set (String data)
+    public void setData (String data)
     {
 	this.data = data;
     }
 
     // Getter - to get the value.
     // ENCAPSULATION - This is the only way the class allows you to get the value of the variable.
-    public String get ()
+    public String getData ()
     {
 	return this.data;
     }

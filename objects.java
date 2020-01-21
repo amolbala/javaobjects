@@ -97,8 +97,8 @@ public class objects
 	// Vault (encapsulation)
 	vault v = new vault ();
 	// Set the value of the variable using the setter function.
-	v.set ("Encapsulation!");
+	v.setData ("Encapsulation!");
 	// Get the value of the variable using the getter function.
-	System.out.println (v.get ());
+	System.out.println (v.getData ());
     }
 }
